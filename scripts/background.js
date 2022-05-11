@@ -1,5 +1,5 @@
 
-import '/style.css'
+import '/style.css';
 import { AmbientLight, Camera, Mesh } from 'three';
 
 let loader = new THREE.GLTFLoader();

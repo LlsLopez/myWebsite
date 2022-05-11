@@ -1,4 +1,4 @@
-
+console.log("test");
 ( function () {
 
 	class GLTFLoader extends THREE.Loader {
