@@ -1,6 +1,10 @@
-import * as THREE from "https://unpkg.com/three@0.127.0/build/three.module.js";
-import { OrbitControls } from "https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js";
+//import * as THREE from "https://unpkg.com/three@0.127.0/build/three.module.js";
+//import { OrbitControls } from "https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js";
 //import { AmbientLight, Camera, Mesh } from 'three';
+
+import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module.js';
+import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
 
 let loader = new THREE.GLTFLoader();
 const scene = new THREE.Scene();
