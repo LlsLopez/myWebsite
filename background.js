@@ -1,6 +1,8 @@
-import * as THREE from "https://unpkg.com/three@0.127.0/build/three.module.js";
-import { OrbitControls } from "https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js";
+//import * as THREE from "https://unpkg.com/three@0.127.0/build/three.module.js";
+//import { OrbitControls } from "https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js";
 //import { AmbientLight, Camera, Mesh } from 'three';
+
+
 
 let loader = new THREE.GLTFLoader();
 const scene = new THREE.Scene();
