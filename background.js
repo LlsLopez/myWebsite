@@ -24,7 +24,7 @@ const material = new THREE.MeshStandardMaterial({color: 0xFF6347}); // uses ligh
 const torus = new THREE.Mesh(shape,material);
 //scene.add(torus); //ADDS SHAPE INTO SCENE
 
-const pointLight = new THREE.PointLight(0x759D68);
+const pointLight = new THREE.PointLight(0x759D68,20,60,1);
 pointLight.position.set(0,0,50);
 // 5 5 22   
 // -110 110 55
@@ -36,16 +36,16 @@ const lightHelper = new THREE.PointLightHelper(pointLight);
 
 //scene.add(ambientLight);
 scene.add(lightHelper);
-scene.add(pointLight);
+//scene.add(pointLight);
 // generate 1s and 0s alternating for the entire screen
 //function addBinary(){
   //  const newNumber = new TH.
 
 //}
-//let num1 = "/models/number_one/scene.gltf"
-//let num2 = "/models/number_zero/scene.gltf"
-let num1 = "0.gltf"
-let num2 = "1.gltf"
+let num1 = "/models/number_one/scene.gltf"
+let num2 = "/models/number_zero/scene.gltf"
+//let num1 = "/models/one_test/test_green_one.gltf"
+//let num2 = "/models/one_test/test_green_one.gltf"
 //num1.scale(10,10,10);
 
 // Determine how many numbers to generate based on screen size
@@ -55,7 +55,10 @@ function numberCount{
 }
 */
 
+
 const array = [];
+// randomly pick either 1 or 2, then render model on screen
+// at fixed position
 function binary(){
 
     let number = num1;
@@ -67,17 +70,23 @@ function binary(){
         if(Math.floor(Math.random()*2) == 1)
         {
             number = num2;
+            loader.load(number,function(gltf){
+                var model = gltf.scene;
+                model.scale.set(8,10,4);
+                model.position.set(i,j,0);
+                scene.add(gltf.scene);
+            });
         }
         else{
             number = num1;
+            loader.load(number,function(gltf){
+                var model = gltf.scene;
+                model.scale.set(11,9.5,4);
+                model.position.set(i,j+.15,0);
+                scene.add(gltf.scene);
+            });
         }
-
-        loader.load(number,function(gltf){
-            var model = gltf.scene;
-            model.scale.set(10,10,4);
-            model.position.set(i,j,0);
-            scene.add(gltf.scene);
-        });
+        
 
     }
 }
@@ -92,6 +101,13 @@ console.log(window.innerWidth);
 var lightX = .10;
 var lightY = .07    ;
 // infinite loop function to call the renderer automatically
+
+
+var effectsButton = document.getElementById("background_button");
+var eB = true;
+console.log(effectsButton); 
+
+scene.add(pointLight);
 function animate(){
     requestAnimationFrame(animate);
 
@@ -120,14 +136,38 @@ function animate(){
     {
         lightY = .07;
     }
-    pointLight.position.x += lightX;
-    pointLight.position.y += lightY;
-}
+    if(eB == true){
+            pointLight.position.x += lightX;
+            pointLight.position.y += lightY;
+    }
 
+
+}
 animate();  
 
+effectsButton.onclick = function(){
+    
+    if(eB == true)
+    {
+        eB = false;
+        console.log(eB);
+        effectsButton.innerHTML = "OFF";
+        scene.remove(pointLight);
+    }
+    else{
+        effectsButton.innerHTML = "ON";
+        eB = true;
+        console.log(eB);
+        scene.add(pointLight);
+    }
+};
 
 
 // DIVIDE SCREEN WIDTH BY SIZE OF NUMBER TO DETERMINE HOW MANY NUMBERS TO GENERATE ON SCREEN
 // IF RESIZING WINDOW, RESET AMOUNT?
 // ^ IF (X) : FUNCTION () --> REDO AMOUNT
+
+// fix lighting bounds
+
+// credits (for later)
+// Created my free logo at LogoMakr.com
