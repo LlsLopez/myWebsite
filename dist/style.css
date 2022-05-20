@@ -24,8 +24,8 @@ canvas {
 }
 .logo{
   color:white;
-  max-width: 7%;
-  height:auto;
+  margin-top:-.1%;
+  max-width: 4%;
   margin-right:auto;
 }
 header{
@@ -34,10 +34,9 @@ header{
   justify-content: flex-end;
   align-items:center;
   padding:30px 10%;
-  opacity: 0.8; 
+  opacity: 1; 
   padding:0;
   width:100%;
-  margin-top:0px;
 }
 li,a,button{
   font-weight:bold;
@@ -78,8 +77,6 @@ button:hover{
 .box1{
   position:relative;
   color:white;
-  justify-content: center;
-  display:flex;
   width:max-content;
   margin:0 auto;
   max-width: 65%;
@@ -121,4 +118,59 @@ button:hover{
   height:50%;
   width:100%;
   padding-top:2%;
+}
+.box1{
+  font-size:35px;
+  line-height: 100%;
+  text-align:left;
+  opacity:.8;
+  text-shadow: 3px 3px #481fdc;
+}
+#description{
+  font-size:20px;
+  line-height: 200%;
+  margin-left:10px;
+}
+#project_label{
+  position:relative;
+  color:white;
+  text-align: center;
+  font-size:30px;
+  background-color: transparent;
+}
+.projects{
+  position:relative;
+  color:white;
+  font-size:30px;
+  text-align:center;
+  background-color:transparent;
+  display:flex;
+}
+#project{
+  background-color:transparent;
+  width:50%;
+}
+#project_description{
+  background-color: transparent;
+  width:50%;
+}
+#project_image{
+  background-color: transparent;
+  max-width: 40%;
+}
+#background_button{
+  padding: 5px 8px;
+  margin-right:10px;
+  background-color: rgba(27, 101, 56,1); /* rgba includes opacity 4th param */
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+#bb{
+  position:relative;
+  color:white;
+  font-weight: bold;
+  font-size:16px;
+  
 }
