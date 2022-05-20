@@ -8,19 +8,23 @@
     <title>Vite App</title>
   </head>
   <body>
-    <canvas id = "background">
+     <canvas id = "background">
 
     </canvas>
     <header>
-      <img class = "logo" src = "images/testImage.png" alt="logo image">
+      <img class = "logo" src = "images/mylogo.png" alt="logo image">
+      <div id = "bb">
+        Bg Effects: 
+      <a id = "background_button">ON</a>
+    </div>
       <nav>
         <ul class = "navigation_links">
-          <li><a href = "https://www.w3schools.com/tags/tag_a.asp">About</a></li>
-          <li><a href = "https://www.w3schools.com/tags/tag_a.asp">Projects</a></li>
-          <li><a href = "https://www.w3schools.com/tags/tag_a.asp">Github</a></li>
+          <li><a href = "/about.html">About</a></li>
+          <li><a href = "projects.html">Projects</a></li>
+          <li><a href = "https://github.com/LlsLopez">Github</a></li>
         </ul>
       </nav>
-      <a class = "cta" href = "#"><button>contact</button></a>
+      <a class = "cta" href = "/contact.html"><button>Contact</button></a>
     </header>
 
     <div class = "personal_info">
@@ -31,7 +35,33 @@
       </div>
     </div>
 
-    <div class = "box1"> Test test and testing some more asidfhahsd fasdihf hadsofhas dfhadso fhausdhfoahsdof haosdhfiahdsiof haisdhfahfdsioh </div>
+    <div class = "box1">
+      Education:  
+      <div id = "description">Cal State University Fullerton - Bachelors (June 2021) - GPA: 3.12</div>
+      <br>
+      Software Languages:  
+      <div id = "description">C++/C, Java, Python, Javascript, Html, Css.</div>
+      <br>
+      IDE / Programs used:  
+      <div id = "description">Vs code, MS Visual Studios, Eclipse, Netbeans, Jupyter Notebook,
+        Rguroo, Github.
+      </div>
+      <br>
+
+      </div>
+    <div id = "project_label">Projects:</div>
+    <div class = "projects">
+      <div id = "project">
+        Project Temp Name: <br>
+        <a href="/projects.html">
+        <img id = "project_image" src = "images/testImage.png" alt="project_image">
+      </a>  
+      </div>
+      <div id = "project_description">
+        description
+      </div>
+    </div> 
+
 
     <div id="app"></div>
     <script type="module" src="/three.min.js"></script> 
