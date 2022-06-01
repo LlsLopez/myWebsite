@@ -2,30 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <link rel="icon" type="image/svg+xml" href="mylogo.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel=“stylesheet” type=“text/css” href="style.css"/>
     <title>About</title>
     
 </head>
 <body>
-    <canvas id = "background"> </canvas>
-    <header>
-        <img class = "logo" src = "images/testImage.png" alt="logo image">
-        <nav>
-          <ul class = "navigation_links">
-            <li><a href = "/index.html">Home</a></li>
-            <li><a href = "/projects.html">Projects</a></li>
-            <li><a href = "https://github.com/LlsLopez">Github</a></li>
-          </ul>
-        </nav>
-        <a class = "cta" href = "/contact.html"><button>contact</button></a>
-    </header>
+    <canvas id="background"> </canvas>
+  <header>
+    <img class="logo" src="mylogo.png" alt="logo image">
+    <div id="bb">
+      Bg Effects:
+      <a id="background_button">ON</a>
+    </div>
+    <nav>
+      <ul class="navigation_links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="https://github.com/LlsLopez">Github</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="./contact.html"><button>Contact</button></a>
+  </header>
+
+  <div id="about_details">
+    The purpose of this website was to practice and demonstrate my capabilities in creating
+    a website without the use of a website builder. Furthermore it allows me to showcase some of
+    my past projects, as well as corresponding direct links to source code. I will be able to
+    continuously update the site as I gain more experience, as well as periodically upgrade areas
+    which may not be written optimally. The main function is to serve as a personal portfolio. <br>
+    This website is created using mostly html/css, with some javascript for the background. The
+    background is made using .gltf models, with the use of the ThreeJs library.
+  </div>
+
+  <div id="about_credits">
+    <div id="about_big_font">Credits:</div>
+    Assets used in this website:<br>
+    - 1 and 0 Models by ihambru on SketchFab <br>
+    - Website Logo created on LogoMakr.com
+  </div>
 
 
+  <div class="footer2">
+    <img class="logo_footer" src="mylogo.png" alt="logo image">
 
-
-
+  </div>
 
     <div id="app"></div>
     <script type="module" src="./scripts/three.min.js"></script> 
