@@ -2,29 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <link rel="icon" type="image/svg+xml" href="mylogo.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel=“stylesheet” type=“text/css” href="style.css"/>
-    <title>About</title>
+    <title>Projects</title>
     
 </head>
 <body>
-    <canvas id = "background"> </canvas>
-    <header>
-        <img class = "logo" src = "images/testImage.png" alt="logo image">
-        <nav>
-          <ul class = "navigation_links">
-            <li><a href = "/about.html">About</a></li>
-            <li><a href = "/index.html">Home</a></li>
-            <li><a href = "https://github.com/LlsLopez">Github</a></li>
-          </ul>
-        </nav>
-        <a class = "cta" href = "/contact.html"><button>contact</button></a>
-    </header>
+   <canvas id="background"> </canvas>
+  <header>
+    <img class="logo" src="mylogo.png" alt="logo image">
+    <div id="bb">
+      Bg Effects:
+      <a id="background_button">ON</a>
+    </div>
+    <nav>
+      <ul class="navigation_links">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="https://github.com/LlsLopez">Github</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="./contact.html"><button>Contact</button></a>
+  </header>
+  <div id="projects_status_label">Currently Active Projects <br>
+  *Active projects may not be updated fully on githib, as they are being worked on locally.</div>
+  <div class="project_display_container">
+    <div id="project_dragon_image">Hover Me!</div>
+    <div id="project_project_description">
+      <div id="project_name">Dragon Game</div>
+      Game is currently unnamed.<br>
+      This python based program is being created using pygame. In this game you play as a dragon,
+      using WASD to control your character. Dodge incoming attacks from enemies, with varying
+      bullet trajectories / attack patterns, as well as avoiding surrounding objects. Enemies,
+      powerups, and objects are spawned in infinitely, with slight (randomly generated) variations in timing.
+      <br> *Sprites/animatons and any artwork is temporary while completing, and not my own original work. <br>
+      <a class="cta" id="github_link" href="https://github.com/LlsLopez/Dragon_Game"><button>Direct Github
+          Link</button></a>
+    </div>
+  </div>
+  <div id="projects_status_label">Past Projects</div>
+  <div class="project_display_container">
+    <div id="project_connect4_image">Hover Me!</div>
+    <div id="project_project_description">
+      <div id="project_name">Connect 4</div>
+      This mini application was created using java (Gui). It feautures
+      a simple screen selection (second image in the slide), asking players which color they which to choose.
+      It then goes to the second panel, where players take turns placing their color on top of a column by clicking
+      on the respective X above.Game functions normally with all possible win conditions and draw detection. Game ends
+      when either of these circumstances are met, or manually reset by file option.<br>
+      <a class="cta" id="github_link" href="https://github.com/LlsLopez/Connect-Four"><button>Direct Github
+          Link</button></a>
+    </div>
+  </div>
+
+  <div class="project_display_container">
+    <div id="project_blackjack_image">
+
+    </div>
+    <div id="project_project_description">
+      <div id="project_name">Blackjack Ai</div>
+      This application was created between myself and three other members for a class project. Using
+      python, we created an AI blackjack player who would determine the best statistical strategy to profiting
+      in a standard game of blackjack. The "player" had no knowledge of the cards left, and used the method
+      of "card counting" in order to determine the best possible move. Using statistics and basic mathematics,
+      the bot was able to weigh potential gain and the probability of winning the next hand to
+      determine whether to bet high, and if it should hit/double. The player starts with $10,000, and the
+      program runs for 1,000 games, then displays the results. Because it is all luck based, and house favoured,
+      the player is still likely to lose, however less often.<br>
+      <a class="cta" id="github_link" href="https://github.com/jakobpatino/CPSC481_BlackjackAI"><button>Direct Github
+          Link</button></a>
+    </div>
+  </div>
+  <div class="project_display_container">
+    <div id="project_chatbot_image">
+    </div>
+    <div id="project_project_description">
+      <div id="project_name">Chat-Bot</div>
+      This simple chat bot application was created for a mock assignment, where a company
+      needed a bot (for their website) to answer frequent concerns, negating the need for a human representative
+      to answer. This program was created using c++, with simple string reading, allowing for the detection
+      of specific key words, such as "cancel" and "subscription" in the same text field, which would then return
+      the appropriate answer. It is in very early stages, as their were set questions which needed to be answered,
+      and no deeper leveled questions.
+      <br>
+      <a class="cta" id="github_link" href="https://github.com/LlsLopez/Chat-Bot"><button>Direct Github
+          Link</button></a>
+    </div>
+  </div>
 
 
+  <div class="project_display_container">
+    <div id="project_no_image">This project is an older project, and website is no longer
+      hosted / running. Code is still available in github. No image(s) to show.
+    </div>
+    <div id="project_project_description">
+      <div id="project_name">SoftwareHouse</div>
+      This project was a collaborated website with several other teammates (from a course). The goal of this
+      website was to create a "one stop shop" for all useful utilities. This included useful website links to
+      popular websites, such as stack overflow, useful created application (calculators), and even "for fun" sections,
+      such as flash game (some originally created by myself/ group). While in reality this website does not hold
+      as much use, the main purpose of this project was to practice important real world skills, such as scrumming and
+      working with
+      larger groups, and following models like waterfall and agile. <br>
+      <a class="cta" id="github_link" href="https://github.com/LlsLopez/SoftWareHouse-Website"><button>Direct Github
+          Link</button></a>
+    </div>
+  </div>
 
+  <div class="footer">
+    <img class="logo_footer" src="mylogo.png" alt="logo image">
 
+  </div>
 
 
     <div id="app"></div>
