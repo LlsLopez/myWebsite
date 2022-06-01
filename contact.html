@@ -9,23 +9,36 @@
     
 </head>
 <body>
-    <canvas id = "background"> </canvas>
-    <header>
-        <img class = "logo" src = "images/testImage.png" alt="logo image">
-        <nav>
-          <ul class = "navigation_links">
-            <li><a href = "./about.html">About</a></li>
-            <li><a href = "./projects.html">Projects</a></li>
-            <li><a href = "https://github.com/LlsLopez">Github</a></li>
-          </ul>
-        </nav>
-        <a class = "cta" href = "./index.html"><button>Home</button></a>
-    </header>
+     <canvas id="background"> </canvas>
+  <header>
+    <img class="logo" src="mylogo.png" alt="logo image">
+    <div id="bb">
+      Bg Effects:
+      <a id="background_button">ON</a>
+    </div>
+    <nav>
+      <ul class="navigation_links">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="https://github.com/LlsLopez">Github</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="./index.html"><button>Home</button></a>
+  </header>
+  <div id="contact_header_label">Send me an Email!</div>
+  <form id="contact_box" action="https://formsubmit.co/dxhbaws@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Website Contact Email">
+    <input id="contact_email" type="email" name="email" placeholder="Your Email Address" required>
+    <input id="contact_name" type="text" name="name" placeholder="Your Name" required>
+    <textarea id="contact_message" type="text" name="message" placeholder="Message Here" required></textarea>
+    <button id="contact_button" type="submit">Send Email</button>
+    <input type="hidden" name="_next" value="https://llslopez.github.io/myWebsite/contact.html">
+  </form>
 
+  <div class="footer">
+    <img class="logo_footer" src="mylogo.png" alt="logo image">
 
-
-
-
+  </div>
 
     <div id="app"></div>
     <script type="module" src="./scripts/three.min.js"></script> 
