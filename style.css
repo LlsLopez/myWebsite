@@ -369,7 +369,7 @@ button:hover {
   position: relative;
   width: 35%;
   height: 250px;
-  background: url("images/dragon_game_ss2.png");
+  background: url("./dragon_game_ss2.png");
   background-size: contain;
   background-repeat: no-repeat;
   color: white;
@@ -378,7 +378,7 @@ button:hover {
 }
 
 #project_dragon_image:hover {
-  background: url("images/dragon_game_ss.png");
+  background: url("./dragon_game_ss.png");
   background-size: contain;
   background-repeat: no-repeat;
   color: transparent;
@@ -388,7 +388,7 @@ button:hover {
   position: relative;
   width: 35%;
   height: 250px;
-  background: url("images/connect_4_ss2.png");
+  background: url("./connect_4_ss2.png");
   background-size: contain;
   background-repeat: no-repeat;
   color: rgb(3, 3, 3);
@@ -397,7 +397,7 @@ button:hover {
 }
 
 #project_connect4_image:hover {
-  background: url("images/connect_4_ss.png");
+  background: url("./connect_4_ss.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -408,7 +408,7 @@ button:hover {
   position: relative;
   width: 35%;
   height: 300px;
-  background: url("images/blackjack_game_ss.png");
+  background: url("./blackjack_game_ss.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -418,7 +418,7 @@ button:hover {
   position: relative;
   width: 40%;
   height: 300px;
-  background: url("images/chat_bot_ss.png");
+  background: url("./chat_bot_ss.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
