@@ -48,8 +48,8 @@ scene.add(lightHelper);
 //  const newNumber = new TH.
 
 //}
-let num1 = "/models/number_one/scene.gltf"
-let num2 = "/models/number_zero/scene.gltf"
+let num1 = "./number_one/scene.gltf"
+let num2 = "./number_zero/scene.gltf"
 //let num1 = "/models/one_test/test_green_one.gltf"
 //let num2 = "/models/one_test/test_green_one.gltf"
 //num1.scale(10,10,10);
