@@ -8,60 +8,106 @@
     <title>Vite App</title>
   </head>
   <body>
-     <canvas id = "background">
+     <canvas id="background">
 
-    </canvas>
-    <header>
-      <img class = "logo" src = "mylogo.png" alt="logo image">
-      <div id = "bb">
-        Bg Effects: 
-      <a id = "background_button">ON</a>
+  </canvas>
+  <header>
+    <img class="logo" src="images/mylogo.png" alt="logo image">
+    <div id="bb">
+      Bg Effects:
+      <a id="background_button">ON</a>
     </div>
-      <nav>
-        <ul class = "navigation_links">
-          <li><a href = "./about.html">About</a></li>
-          <li><a href = "./projects.html">Projects</a></li>
-          <li><a href = "https://github.com/LlsLopez">Github</a></li>
-        </ul>
-      </nav>
-      <a class = "cta" href = "./contact.html"><button>Contact</button></a>
-    </header>
+    <nav>
+      <ul class="navigation_links">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="https://github.com/LlsLopez">Github</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="./contact.html"><button>Contact</button></a>
+  </header>
 
-    <div class = "personal_info">
-      <img class = "personal_image" src = "testImage.png" alt="self picture">
-      <div class = "split1">
-        <div id = "split1a">Armando Lopez</div>
-        <div id = "split1b">Computer Programmer</div>
+  <div class="personal_info">
+    <img class="personal_image" src="self_photo.jpeg" alt="self picture">
+    <div class="split1">
+      <div id="split1a">Armando Lopez</div>
+      <div id="split1b">Computer Scientist</div>
+    </div>
+  </div>
+
+  <div class="box1">
+    Education:
+    <div id="description">Cal State University Fullerton - Bachelors in Computer Science -
+      June 2021.
+    </div>
+    <br>
+    Software Languages:
+    <div id="description">C++/C, Java, Python, Javascript, Html, Css.</div>
+    <br>
+    IDE / Programs used:
+    <div id="description">Vs code, MS Visual Studios, Eclipse, Netbeans, Jupyter Notebook,
+      Rguroo, Github.
+      <br><br>
+    </div>
+    Notable Courses Taken:
+    <div id="description">
+      *All course codes are from CSUF* <br>
+      Math: <br>150A / 150B (Calculus), 270A/270B (Discrete Mathematics/Linear Algebra), 338(Statistics).
+      <br>
+      Computer Science:<br> 121/131 (Object Oriented/Data Structures), 223J (Java Programming),240 (Assembly),
+      311/315 (Technical Writing for Computer Science / Ethics), 323 (Compilers), 332(File Structures and Databases),
+      335 (Algorithm Engineering), 349 (Web-Front-End),353(Computer Security Intro), 351(OS Concepts),
+      362(Software Engineering), 386(Game Design), 440
+      (Computer System Architecture), 471 (Computer Communications), 481 (Artificial Intelligence),
+      483 (Intro to Machine Learning).
+    </div>
+    <br>
+
+  </div>
+  <div id="project_label">Currently Active Projects (under work):</div>
+  <div class="projects">
+
+    <div id="project">
+      This Website!: <br>
+      <a href="./projects.html">
+        <img id="project_image" src="images/website_ss.png" alt="project_image">
+      </a>
+    </div>
+    <div id="project_description_box">
+      <div id="project_extra_info"> *Incomplete</div>
+      <div id="project_description">
+        This website is being created using mostly basic (html/css(flex)/js) technologies, with
+        the exception of the background. The background uses ThreeJs in order to render each 3d (.gltf) model
+        (1s and 0s) individually, allowing the moving lighting effect to have a more impactful
+        visual effect, as opposed to a normal still background image. The numbers in the background have a
+        randomly generated order each time the webpage is loaded up.
       </div>
     </div>
 
-    <div class = "box1">
-      Education:  
-      <div id = "description">Cal State University Fullerton - Bachelors (June 2021) - GPA: 3.12</div>
-      <br>
-      Software Languages:  
-      <div id = "description">C++/C, Java, Python, Javascript, Html, Css.</div>
-      <br>
-      IDE / Programs used:  
-      <div id = "description">Vs code, MS Visual Studios, Eclipse, Netbeans, Jupyter Notebook,
-        Rguroo, Github.
-      </div>
-      <br>
 
+    <div id="project">
+      Dragon Game: <br>
+      <a href="./projects.html">
+        <img id="project_image" src="images/dragon_game_ss.png" alt="project_image">
+      </a>
+    </div>
+    <div id="project_description_box">
+      <div id="project_extra_info"> *Incomplete</div>
+      <div id="project_description">
+        This python based program is being created using pygame. In this game you play as a dragon,
+        using WASD to control your character. Dodge incoming attacks from enemies, with varying
+        bullet trajectories / attack patterns, as well as avoiding surrounding objects. Enemies,
+        powerups, and objects are spawned in infinitely, with slight (randomly generated) variations in timing.
+        <br> *Sprites/animatons and any artwork is temporary while completing, and not my own original work.
       </div>
-    <div id = "project_label">Projects:</div>
-    <div class = "projects">
-      <div id = "project">
-        Project Temp Name: <br>
-        <a href="/projects.html">
-        <img id = "project_image" src = "testImage.png" alt="project_image">
-      </a>  
-      </div>
-      <div id = "project_description">
-        description
-      </div>
-    </div> 
+    </div>
 
+  </div>
+
+  <div class="footer">
+    <img class="logo_footer" src="mylogo.png" alt="logo image">
+
+  </div>
 
     <div id="app"></div>
     <script type="module" src="./three.min.js"></script> 
